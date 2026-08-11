@@ -1,30 +1,18 @@
-#List
-list=["mango","banana","cherry","apple"]
-print(list)
 
-#length of the list
-print(len(list))
 
-#indexing
-print(list[3])
+#tuple
+"tuples are immutable we cannot change it, once its created."
+" So if we want to delete or  add an item we convert the tuple into list"
+" do the rest of changes we need then we  converted that list into tuple again."
+tuple_a = (1, 2, 3, 4, 5)
+print(tuple_a) 
 
-#negative indexing
-print(list[-1])
+new = list(tuple_a)
 
-#change list item by refering the index 
-number=[1,2,"mango",4,5]
-number[2]= 3
-print(number)
+# Add and remove items 
+new.append(6) 
+new.pop(3)     
 
-#add item
-number.append(6)
-print(number)
-
-#insert item by telling where to insert using index
-number.insert(2,"mango")
-print (number)
-
-#extend the list
-num2=[7,8,9,10]
-number.extend(num2)
-print (number)
+# Convert back into a tuple
+tuple_a = tuple(new)
+print(tuple_a)  
