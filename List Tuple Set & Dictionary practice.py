@@ -45,3 +45,42 @@ new.pop(3)
 # Convert back into a tuple
 tuple_a = tuple(new)
 print(tuple_a)  
+
+
+#set
+#in set items are un-ordered
+
+#True and 1 is considered the same value:
+thisset = {"apple", "banana", "cherry", True, 1, 2}
+
+print(thisset)
+#False and 0 is considered the same value:
+set = {"apple", "banana", "cherry", False, 0, 2}
+
+print(set)
+print(len(set))
+print(type(set))
+
+
+#Check if "shwarma" is present in the set:
+food = {"shwarma","burger","pizza","chips"}
+print("shwarma" in food)
+#Check if "pizza" is  not present in the set:
+print("pizza" not in food)
+
+#access items in the set
+for x in food:
+    print(x)
+
+#add items
+food.add("coldring")
+print(food)
+#remove item
+food.remove("burger")
+print(food)
+food.discard("burger")
+print(food)
+food.clear()
+print(food)
+
+
